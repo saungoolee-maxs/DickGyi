@@ -7,7 +7,7 @@ The tool also scans the decrypted configuration and prints all detected `vmess:/
 ## Usage
 
 ```bash
- chmod +x DickGyi
+chmod +x DickGyi
 ```
 Decrypt directly from a URL and print the extracted configurations:
 
