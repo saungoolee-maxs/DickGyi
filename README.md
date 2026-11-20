@@ -2,7 +2,7 @@
 
 **DickGyi** is a standalone command-line tool that converts Burmese-character encrypted data into Base64, decodes and decrypts the AES ciphertext, and saves the result as valid JSON.
 
-The tool also scans the decrypted configuration and prints all detected `vmess://` links and other supported V2Ray configurations directly in the terminal.
+The tool also scans the decrypted configuration and prints all detected `vmess://` links are show in terminal and other supported V2Ray configurations are saved in json output.
 
 ## Usage
 
