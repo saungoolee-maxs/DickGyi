@@ -1,14 +1,29 @@
 # DickGyi Burmese JSON Decryptor
 
-A standalone command-line tool that converts the app's Burmese-character transport format into Base64, decodes the AES ciphertext, decrypts it, saves valid JSON, and prints all `vmess://` links found in the configuration and other v2ray formats found in output json file.
+**DickGyi** is a standalone command-line tool that converts Burmese-character encrypted data into Base64, decodes and decrypts the AES ciphertext, and saves the result as valid JSON.
 
-Usages - 
+The tool also scans the decrypted configuration and prints all detected `vmess://` links and other supported V2Ray configurations directly in the terminal.
 
-  "./DickGyi https://raw.githubusercontent.com/foo/foo/encrypted.json"
+## Usage
 
-  "./DickGyi https://raw.githubusercontent.com/foo/foo/encrypted.json -o decrypted.json"
+Decrypt directly from a URL and print the extracted configurations:
 
-  "./DickGyi encrypted.json -o decrypted.json" # if encrypted file is locally saved.
+```bash
+./DickGyi "https://raw.githubusercontent.com/foo/foo/encrypted.json"
+```
 
+Decrypt from a URL and save the output:
 
-Call me PaPa - D*ck Gyi
+```bash
+./DickGyi "https://raw.githubusercontent.com/foo/foo/encrypted.json" -o decrypted.json
+```
+
+Decrypt a locally saved encrypted file:
+
+```bash
+./DickGyi encrypted.json -o decrypted.json
+```
+
+## Author
+
+**Call me PaPa --- D*ck Gyi.**
